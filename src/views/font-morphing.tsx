@@ -4,7 +4,7 @@ function Preview() {
   return (
     <div className="w-full h-full md:text-4xl lg:text-5xl sm:text-3xl text-2xl flex flex-row items-start justify-start bg-background font-normal overflow-hidden">
       <p className="whitespace-pre-wrap">
-        <span>{"I`m a "}</span>
+        <span className="text-white">{"I`m a "}</span>
         <Typewriter
           text={[
             "Programmer",
