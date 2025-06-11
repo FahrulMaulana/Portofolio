@@ -6,7 +6,7 @@ function Experience() {
             {/* Header for the entire Skills section */}
             <div className="relative mt-24 top-0 left-0 right-0 z-0 text-center">
                 <h1 className="text-4xl lg:text-5xl font-bold text-white font-bold mb-2">Experience</h1> {/* Mengurangi margin bawah */}
-                <p className="text-base sm:text-lg text-gray-300 max-w-3xl max-w-2xl mx-auto"> {/* Menambahkan margin bawah kecil */}
+                <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto px-4"> {/* Menambahkan margin bawah kecil */}
                     Explore my skills and expertise through this interactive timeline.
                 </p>
             </div> 
