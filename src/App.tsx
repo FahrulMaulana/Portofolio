@@ -25,7 +25,7 @@ function App() {
       </div>
 
       {/* Project section dengan padding-top yang cukup */}
-      <div id="project" className="w-full overflow-x-hidden pt-28">
+      <div id="project" className="w-full overflow-x-hidden pt-28 pb-20">
         <Project />
       </div>
 
