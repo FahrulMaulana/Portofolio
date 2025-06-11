@@ -1,13 +1,13 @@
 import { AnimatedTestimonialsDemo } from "@/views/project";
 
-function Skill() {
+function Project() {
     return (
         <div className="relative h-full w-full overflow-hidden">            
-            <div className="bg-transparent h-screen w-screen flex items-center justify-center pt-20">
+            <div className="bg-transparent h-100vh w-screen flex items-center justify-center">
                 <AnimatedTestimonialsDemo />
             </div>
         </div>
     );
 }
 
-export default Skill;
+export default Project;

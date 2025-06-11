@@ -36,10 +36,10 @@ function AnimatedTestimonialsDemo() {
   ];
 
   return (
-<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-12">
-  <div className="text-center mb-8 md:mb-12">
-    <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 px-4">
-      Project
+<div className="pt-40">
+  <div className="text-center pb-10 lg:pb-20">
+    <h2 className="text-4xl lg:text-5xl font-bold text-white font-bold  mb-4 px-4 mt-1">
+     Newest Project
     </h2>
     <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto px-4">
       Check out some of my recent projects and applications I've built.

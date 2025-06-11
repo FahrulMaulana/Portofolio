@@ -20,17 +20,17 @@ function App() {
       </div>
       
       {/* Experience dengan padding-top lebih besar untuk memberi ruang dari navbar */}
-      <div id="experience" className="w-full overflow-hidden pt-28 pb-20">
+      <div id="experience" className="w-full overflow-hidden pt-28">
         <Experience/>
       </div>
 
-      {/* Project section dengan padding-top yang cukup */}
+      {/* Project section dengan tinggi lebih besar dan padding-top yang cukup */}
       <div id="project" className="relative z-10 w-full overflow-x-hidden">
         <Project />
       </div>
 
       {/* Skill section dengan padding-top yang cukup */}
-      <div id="skill" className="relative z-0 pt-28">
+      <div id="skill" className="relative z-0">
         <Skill />
         <FooterSection />
       </div>

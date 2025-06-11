@@ -121,7 +121,7 @@ export function LogoCarouselDemo() {
           <a href="https://www.newcult.co" target="_blank">
             <GradientHeading variant="light" size="xl" className="pb-2">Skill</GradientHeading>
           </a>
-          <GradientHeading variant="light" size="xxs" weight="base">
+          <GradientHeading variant="light" size="xxs" weight="base" className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto px-4">
            Explore my skills and expertise through this interactive timeline.
           </GradientHeading>
         </div>
