@@ -39,7 +39,7 @@ function AnimatedTestimonialsDemo() {
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-12">
   <div className="text-center mb-8 md:mb-12">
     <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 px-4">
-      Newest Project
+      Project
     </h2>
     <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto px-4">
       Check out some of my recent projects and applications I've built.
