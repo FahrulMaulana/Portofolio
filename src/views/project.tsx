@@ -36,17 +36,22 @@ function AnimatedTestimonialsDemo() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center">
-      <h2 className="text-5xl font-bold text-white mb-4">Newest Project</h2>
-      {/* <p className="text-lg text-gray-600">
-        Hear from our satisfied clients about their experiences with our platform.
-      </p> */}
-      </div>
-      <div className="mt-12">
-      <AnimatedTestimonials testimonials={testimonials} />
-      </div>
-    </div>
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-12">
+  <div className="text-center mb-8 md:mb-12">
+    <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 px-4">
+      Newest Project
+    </h2>
+    <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto px-4">
+      Check out some of my recent projects and applications I've built.
+    </p>
+  </div>
+  <div className="pb-20 overflow-visible">
+    <AnimatedTestimonials 
+      testimonials={testimonials} 
+      className="overflow-visible py-4"
+    />
+  </div>
+</div>
   )
 }
 

@@ -8,26 +8,29 @@ import { Navbar } from './views/navbar'
 
 function App() {
   return (
-    <div className="relative h-screen w-screen overflow-x-hidden">
-      {/* Hero mengisi seluruh layar dan menjadi interaktif */}
-      <div id="home" className="relative w-full h-full overflow-y-auto overflow-x-hidden ">
-        <Hero />
-      </div>
-      
-      {/* Navbar dengan z-index lebih tinggi tapi hanya header yang dapat diklik */}
+    <div className="relative w-screen overflow-x-hidden">
+      {/* Navbar dengan z-index lebih tinggi */}
       <div className="fixed top-0 left-0 right-0 z-50">
         <Navbar />
       </div>
-
-      <div id="experience">
+      
+      {/* Hero mengisi seluruh layar */}
+      <div id="home" className="relative w-full h-screen overflow-hidden">
+        <Hero />
+      </div>
+      
+      {/* Experience dengan padding-top lebih besar untuk memberi ruang dari navbar */}
+      <div id="experience" className="w-full overflow-hidden pt-28 pb-20">
         <Experience/>
       </div>
-      {/* Skill section dengan width terbatas */}
-      <div id="project" className="w-full overflow-x-hidden=">
+
+      {/* Project section dengan padding-top yang cukup */}
+      <div id="project" className="w-full overflow-x-hidden pt-28">
         <Project />
       </div>
 
-      <div id="skill"  className="relative z-0">
+      {/* Skill section dengan padding-top yang cukup */}
+      <div id="skill" className="relative z-0 pt-28">
         <Skill />
         <FooterSection />
       </div>
