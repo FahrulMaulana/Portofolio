@@ -7,7 +7,7 @@ function Preview() {
         <span className="text-white">{"I`m a "}</span>
         <Typewriter
           text={[
-            "Programmer",
+            "Fullstack Developer",
             "Backend Developer",
             "Frontend Developer",
           ]}

@@ -1,4 +1,5 @@
 import './App.css'
+import Experience from './pages/experience'
 import FooterSection from './pages/footer'
 import Hero from "./pages/hero"
 import Project from './pages/project'
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="relative h-screen w-screen overflow-x-hidden">
       {/* Hero mengisi seluruh layar dan menjadi interaktif */}
-      <div className="relative w-full h-full overflow-y-auto overflow-x-hidden">
+      <div id="home" className="relative w-full h-full overflow-y-auto overflow-x-hidden ">
         <Hero />
       </div>
       
@@ -18,13 +19,16 @@ function App() {
         <Navbar />
       </div>
 
+      <div id="experience">
+        <Experience/>
+      </div>
       {/* Skill section dengan width terbatas */}
-      <div className="w-full overflow-x-hidden">
-        <Skill />
+      <div id="project" className="w-full overflow-x-hidden=">
+        <Project />
       </div>
 
-      <div>
-        <Project/>
+      <div id="skill"  className="relative z-0">
+        <Skill />
         <FooterSection />
       </div>
 

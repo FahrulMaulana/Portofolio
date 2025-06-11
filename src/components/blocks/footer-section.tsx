@@ -63,11 +63,11 @@ export function Footer() {
                 <AnimatedContainer className="space-y-4 text-white">
                     <FrameIcon className="size-8 text-white" />
                     <p className="text-white mt-8 text-sm md:mt-0">
-                        © {new Date().getFullYear()} Asme. All rights reserved.
+                        © {new Date().getFullYear()} Fahrul Maulana. All rights reserved.
                     </p>
                 </AnimatedContainer>
 
-                <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4 xl:col-span-2 xl:mt-0">
+                {/* <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4 xl:col-span-2 xl:mt-0">
                     {footerLinks.map((section, index) => (
                         <AnimatedContainer key={section.label} delay={0.1 + index * 0.1}>
                             <div className="mb-10 md:mb-0">
@@ -88,7 +88,7 @@ export function Footer() {
                             </div>
                         </AnimatedContainer>
                     ))}
-                </div>
+                </div> */}
             </div>
         </footer>
     );

@@ -1,8 +1,25 @@
 import { AuroraButton } from "@/components/ui/aurora-button";
 
 function AuroraButtonDemo3() {
+  // Fungsi untuk men-download CV
+  const handleDownloadCV = () => {
+    // Asumsikan file CV berada di folder public/cv/resume.pdf
+    const cvUrl = "/fahrulCV.pdf";
+    
+    // Membuat element anchor untuk download
+    const link = document.createElement("a");
+    link.href = cvUrl;
+    link.download = "Fahrul_Maulana_CV.pdf"; // Nama file yang akan di-download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <AuroraButton glowClassName="from-pink-500 via-purple-500 to-green-500">
+    <AuroraButton 
+      onClick={handleDownloadCV}
+      glowClassName="from-pink-500 via-purple-500 to-green-500"
+    >
       <div className="flex items-center gap-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"

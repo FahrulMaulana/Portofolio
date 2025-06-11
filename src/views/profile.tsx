@@ -3,19 +3,19 @@ import { Component } from "@/components/ui/infinite-menu"; // Adjust path if nec
 const DemoTwo = () => {
   const items = [
     {
-      image: "https://picsum.photos/300/300?grayscale",
+      image: "/src/assets/foto2.jpeg",
       // link: "https://21st.dev/",
     },
     {
-      image: "https://picsum.photos/400/400?grayscale",
+      image: "/src/assets/foto1.jpeg",
       // link: "https://21st.dev/",
     },
     {
-      image: "https://picsum.photos/500/500?grayscale",
+      image: "/src/assets/foto3.jpeg",
       // link: "https://21st.dev/",
     },
     {
-      image: "https://picsum.photos/600/600?grayscale",
+      image: "/src/assets/foto4.jpeg",
       // link: "https://21st.dev/",
     },
   ];
