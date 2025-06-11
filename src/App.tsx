@@ -14,46 +14,27 @@ function App() {
         <Navbar />
       </div>
       
-      {/* Hero section - full height & width */}
-      <section id="home" className="relative w-full h-[100vh] overflow-hidden">
+      {/* Hero mengisi seluruh layar */}
+      <div id="home" className="relative w-full h-screen overflow-hidden">
         <Hero />
-      </section>
+      </div>
       
-      {/* Experience section - full height & width dengan scroll margin */}
-      <section 
-        id="experience" 
-        className="relative w-full h-[100vh] flex flex-col justify-center overflow-visible"
-        style={{ scrollMarginTop: '80px' }}
-      >
-        <div className="h-full w-full py-20 flex items-center">
-          <Experience/>
-        </div>
-      </section>
+      {/* Experience dengan padding-top lebih besar untuk memberi ruang dari navbar */}
+      <div id="experience" className="w-full overflow-hidden pt-28 pb-20">
+        <Experience/>
+      </div>
 
-      {/* Project section - full height & width dengan scroll margin */}
-      <section 
-        id="project" 
-        className="relative w-full h-[100vh] flex flex-col justify-center overflow-visible z-20"
-        style={{ scrollMarginTop: '80px' }}
-      >
-        <div className="h-full w-full py-20 flex items-center">
-          <Project />
-        </div>
-      </section>
+      {/* Project section dengan padding-top yang cukup */}
+      <div id="project" className="relative z-10 w-full overflow-x-hidden pt-28">
+        <Project />
+      </div>
 
-      {/* Skill section - full height & width dengan scroll margin */}
-      <section 
-        id="skill" 
-        className="relative w-full h-[100vh] flex flex-col justify-center overflow-visible z-0"
-        style={{ scrollMarginTop: '80px' }}
-      >
-        <div className="h-full w-full py-20 flex flex-col justify-between">
-          <div className="flex-grow flex items-center">
-            <Skill />
-          </div>
-          <FooterSection />
-        </div>
-      </section>
+      {/* Skill section dengan padding-top yang cukup */}
+      <div id="skill" className="relative z-0 pt-28">
+        <Skill />
+        <FooterSection />
+      </div>
+
     </div>
   )
 }

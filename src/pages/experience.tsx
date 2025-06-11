@@ -2,7 +2,7 @@ import { StickyScrollRevealDemo } from "@/views/demoTimeline";
 
 function Experience() {
     return (
-        <div className="relative max-h-screen w-full overflow-hidden">
+        <div className="relative min-h-screen w-full overflow-hidden">
             {/* Header for the entire Skills section */}
             <div className="relative mt-24 top-0 left-0 right-0 z-0 text-center">
                 <h1 className="text-4xl font-bold mb-2 text-white">Experience</h1> {/* Mengurangi margin bawah */}
