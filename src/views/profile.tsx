@@ -3,19 +3,19 @@ import { Component } from "@/components/ui/infinite-menu"; // Adjust path if nec
 const DemoTwo = () => {
   const items = [
     {
-      image: "/src/assets/foto2.jpeg",
+      image: "/foto2.jpeg",
       // link: "https://21st.dev/",
     },
     {
-      image: "/src/assets/foto1.jpeg",
+      image: "/foto1.jpeg",
       // link: "https://21st.dev/",
     },
     {
-      image: "/src/assets/foto3.jpeg",
+      image: "/foto3.jpeg",
       // link: "https://21st.dev/",
     },
     {
-      image: "/src/assets/foto4.jpeg",
+      image: "/foto4.jpeg",
       // link: "https://21st.dev/",
     },
   ];

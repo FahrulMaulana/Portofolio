@@ -9,7 +9,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <img
-          src="/src/assets/UNPAM_logo1.png"
+          src="/UNPAM_logo1.png"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -26,7 +26,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <img
-          src="/src/assets/nexinus_logo.jpeg"
+          src="/nexinus_logo.jpeg"
           width={300}
           height={300}
           className="h-full w-full object-cover"

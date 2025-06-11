@@ -6,32 +6,32 @@ function AnimatedTestimonialsDemo() {
       quote: "PPDB has streamlined the entire student admission process with its intuitive interface and powerful features. It's exactly what modern schools need.",
       name: "PPDB",
       designation: "Digital Enrollment Platform",
-      src: "/src/assets/ppdb.png",
+      src: "/ppdb.png",
     },
     {
       quote: "This platform brings clarity, control, and convenience to managing academic journals. It’s built for editors, reviewers, and authors alike.",
       name: "Journal Management",
       designation: "Research Submission & Review System",
-      src: "/src/assets/majour.png",
+      src: "/majour.png",
     },
     {
       quote: "YTMP3 is a simple application I built to download MP3 audio from YouTube videos. users can easily paste a YouTube link and download audio files.",
       name: "YTMP3",
       designation: "YouTube to MP3 Downloader",
-      src: "/src/assets/mp3.png",
+      src: "/mp3.png",
     },
     {
       quote: "I developed a modern and responsive company profile website for Indian Jaya The website showcases the company's services, project gallery, and contact information in a clean and user-friendly layout.",
       name: "Company Profile",
       designation: "Welding Workshop Business Website",
 
-      src: "src/assets/12.png",
+      src: "/12.png",
     },
     {
      quote: "PAW directory connects people with trusted local businesses in seconds. It’s the easiest way to discover what’s around you.",
      name: "PAW directory",
      designation: "Local Business Directory Platform",
-      src: "src/assets/b2.png",
+      src: "/b2.png",
     },
   ];
 
