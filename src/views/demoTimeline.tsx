@@ -69,9 +69,9 @@ const content = [
   // },
 ];
 
-export function StickyScrollRevealDemo() {
+export function StickyScrollRevealDemo({ className = "" }: { className?: string }) {
   return (
-    <div className="">
+    <div className={className}>
       <StickyScroll content={content} />
     </div>
   );

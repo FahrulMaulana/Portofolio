@@ -14,13 +14,13 @@ function App() {
         <Navbar />
       </div>
       
-      {/* Hero mengisi seluruh layar */}
-      <div id="home" className="relative w-full h-screen overflow-hidden">
+      {/* Hero section */}
+      <div id="home" className="relative w-full pb-86 md:pb-86 lg:pb-86">
         <Hero />
       </div>
       
       {/* Experience dengan padding-top lebih besar untuk memberi ruang dari navbar */}
-      <div id="experience" className="w-full overflow-hidden pt-28">
+      <div id="experience" className="w-full overflow-hidden ">
         <Experience/>
       </div>
 

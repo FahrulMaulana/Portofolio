@@ -1,25 +1,53 @@
+import { useLayoutEffect, useRef } from "react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { DemoOne } from "@/views/background"
 import { AuroraButtonDemo3 } from "@/views/button-cv"
 import { Preview } from "@/views/font-morphing"
-import { DemoTwo } from "@/views/profile"
+import ImageScrollSequence from "@/views/image-scroll-sequence"
 import SocialMediaIcons from "@/views/social-media"
 
+gsap.registerPlugin(ScrollTrigger)
+
 function Hero() {
+  const heroRef = useRef<HTMLDivElement | null>(null)
+  const contentRef = useRef<HTMLDivElement | null>(null)
+
+  useLayoutEffect(() => {
+    if (!heroRef.current || !contentRef.current) return
+
+    ScrollTrigger.getById("hero-content-pin")?.kill()
+
+    const trigger = ScrollTrigger.create({
+      id: "hero-content-pin",
+      trigger: heroRef.current,
+      start: "top top",
+      end: "+=50%",
+      pin: contentRef.current,
+      pinSpacing: true,
+      scrub: true,
+      anticipatePin: 1,
+    })
+
+    return () => {
+      trigger.kill()
+    }
+  }, [])
+
   return (
-    <div className="relative max-h-screen w-full ">
+    <div ref={heroRef} className="relative h-screen w-full">
       {/* Background shader with absolute positioning */}
-      <div className="fixed inset-0 z-0">
+      <div className="absolute inset-0 z-0">
         <DemoOne />
       </div>
       
       {/* Responsive container */}
-      <div className="relative w-screen h-screen">
+      <div ref={contentRef} className="relative z-10 w-screen h-screen">
         <div className="flex flex-col h-full w-full p-4 sm:p-8 md:p-12 lg:p-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 flex-grow ">
-              <div className="block md:hidden w-full py-2 flex items-center justify-center pt-10">
-                <DemoTwo />
-              </div>
-            <div className="flex flex-col justify-center">
+          <ImageScrollSequence className="block md:hidden" totalFrames={120} fps={30} scrub={2.4} />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 flex-grow ">
+            <div className="flex flex-col justify-center md:order-2">
               <div>
                 <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold">Hi, It`s Fahrul Maulana</h1>
               </div>
@@ -55,8 +83,14 @@ function Hero() {
             </div>
             
             {/* Profile image column - hanya tampil pada desktop */}
-            <div className="mt-5 hidden md:flex items-center justify-center">
-              <DemoTwo />
+            <div className="mt-5 hidden md:flex items-center justify-center md:order-1">
+              <ImageScrollSequence
+                className="hidden md:flex pt-0"
+                imageClassName="h-[620px] w-[460px]"
+                totalFrames={120}
+                fps={30}
+                scrub={2.6}
+              />
             </div>
           </div>
         </div>
