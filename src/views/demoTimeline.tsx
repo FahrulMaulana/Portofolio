@@ -1,6 +1,5 @@
 "use client";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
-import { AnimatedTestimonialsDemo } from "@/views/project";
 
 const content = [
   {
@@ -11,8 +10,8 @@ const content = [
       <div className="h-full w-full flex items-center justify-center text-white">
         <img
           src="/UNPAM_logo1.png"
-          width={300}
-          height={300}
+          width={600}
+          height={600}
           className="h-full w-full object-cover"
           alt="placeholder image"
         />
@@ -28,25 +27,14 @@ const content = [
       <div className="h-full w-full flex items-center justify-center text-white">
         <img
           src="/nexinus_logo.jpeg"
-          width={300}
-          height={300}
+          width={600}
+          height={900}
           className="h-full w-full object-cover"
           alt="placeholder image"
         />
       </div>
     ),
   },
-  {
-    title: "Featured Project Showcase",
-    description:
-      "Interactive project highlights embedded directly in the experience timeline.",
-    content: (
-      <div className="bg-transparent h-100vh w-screen flex items-center justify-center">
-        <AnimatedTestimonialsDemo />
-      </div>
-    ),
-  },
-  // {
   //   title: "Version control",
   //   description:
   //     "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
