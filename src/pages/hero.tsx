@@ -37,10 +37,10 @@ function Hero() {
   return (
     <div ref={heroRef} className="relative h-screen w-full">
       {/* Background shader with absolute positioning */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <DemoOne />
       </div>
-      
+       */}
       {/* Responsive container */}
       <div ref={contentRef} className="relative z-10 w-screen h-screen">
         <div className="flex flex-col h-full w-full p-4 sm:p-8 md:p-12 lg:p-20">

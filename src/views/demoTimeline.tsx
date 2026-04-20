@@ -1,5 +1,6 @@
 "use client";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+import { AnimatedTestimonialsDemo } from "@/views/project";
 
 const content = [
   {
@@ -32,6 +33,16 @@ const content = [
           className="h-full w-full object-cover"
           alt="placeholder image"
         />
+      </div>
+    ),
+  },
+  {
+    title: "Featured Project Showcase",
+    description:
+      "Interactive project highlights embedded directly in the experience timeline.",
+    content: (
+      <div className="bg-transparent h-100vh w-screen flex items-center justify-center">
+        <AnimatedTestimonialsDemo />
       </div>
     ),
   },

@@ -12,7 +12,7 @@ function Preview() {
             "Frontend Developer",
           ]}
           speed={70}
-          className="text-violet-500 font-bold"
+          className="text-cyan-400 font-bold sm:text-cyan-800"
           waitTime={1500}
           deleteSpeed={40}
           cursorChar={"_"}
