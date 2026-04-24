@@ -24,7 +24,7 @@ function ImageScrollSequence({
   scrub = 1,
   frameBasePath = "/animasi/cukal",
   framePrefix = "Character_Dad_Green_A_young_Asian_man_with_dark_hair_and_glasses_uzZnxQsh_",
-  frameExtension = "png",
+  frameExtension = "jpg",
 }: ImageScrollSequenceProps) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
